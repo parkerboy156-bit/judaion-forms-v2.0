@@ -22,7 +22,7 @@ export default function LoginPage() {
     if (mode === 'signup') {
       result = await supabase.auth.signUp({ email, password })
       if (!result.error) {
-        setError('Check your email to confirm your account, then log in.')
+        router.push('/dashboard')
         setLoading(false)
         return
       }
@@ -48,7 +48,7 @@ export default function LoginPage() {
       </div>
       <div className="landing-subtitle" style={{ marginBottom: '48px' }}>
         {mode === 'login'
-          ? 'Log in to resume your brief'
+          ? 'Log in to initiate or resume your audit'
           : 'Create an account to begin'}
       </div>
 
