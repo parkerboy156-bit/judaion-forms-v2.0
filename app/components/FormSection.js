@@ -17,10 +17,12 @@ export default function FormSection({
   onNext,
   onBack,
   onSubmit,
+  onSave,
   isFirst,
   isLast,
 }) {
   const [localData, setLocalData] = useState({});
+  const [saveStatus, setSaveStatus] = useState("idle"); // 'idle' | 'saving' | 'saved'
   const [errors, setErrors] = useState({});
   const dragItem = useRef(null);
   const dragOverItem = useRef(null);
@@ -96,6 +98,14 @@ export default function FormSection({
     }
     setErrors({});
     action(localData);
+  }
+
+  async function handleSave() {
+    if (!onSave) return;
+    setSaveStatus("saving");
+    await onSave(localData);
+    setSaveStatus("saved");
+    setTimeout(() => setSaveStatus("idle"), 2500);
   }
 
   // ── DRAG-AND-DROP for priority lists ─────────────────────────────────────
@@ -399,12 +409,31 @@ export default function FormSection({
         </div>
       ))}
 
+      {/* Save bar */}
+      {onSave && (
+        <div className="save-bar">
+          <button
+            type="button"
+            className={`btn-save${saveStatus === "saving" ? " saving" : ""}${saveStatus === "saved" ? " saved" : ""}`}
+            onClick={handleSave}
+            disabled={saveStatus === "saving"}
+          >
+            {saveStatus === "saving" && "Saving..."}
+            {saveStatus === "saved" && "Saved ✓"}
+            {saveStatus === "idle" && "Save Progress"}
+          </button>
+        </div>
+      )}
+
+      {/* Navigation */}
+      <div className="form-nav"></div>
+
       {/* Navigation */}
       <div className="form-nav">
         <button
           type="button"
           className="btn-nav"
-          onClick={() => collectAndAdvance(onBack)}
+          onClick={() => onBack(localData)}
           disabled={isFirst}
         >
           ← Back

@@ -28,6 +28,12 @@ export default function FormShell({
     setFormData((prev) => ({ ...prev, ...updates }));
   }
 
+  async function handleSave(sectionData) {
+    const merged = { ...formData, ...sectionData };
+    setFormData(merged);
+    if (onSaveProgress) await onSaveProgress(currentStep, merged);
+  }
+
   function scrollTop() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }
@@ -45,7 +51,8 @@ export default function FormShell({
   }
 
   function handleBack(sectionData) {
-    saveValues(sectionData);
+    const merged = { ...formData, ...sectionData };
+    setFormData(merged);
     if (currentStep > 0) {
       setCurrentStep((s) => s - 1);
       scrollTop();
@@ -168,6 +175,7 @@ export default function FormShell({
           onNext={handleNext}
           onBack={handleBack}
           onSubmit={handleSubmit}
+          onSave={onSaveProgress ? handleSave : null}
           isFirst={currentStep === 0}
           isLast={currentStep === totalSteps - 1}
         />

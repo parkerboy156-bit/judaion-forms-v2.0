@@ -45,6 +45,7 @@
   --subtle: #888888;
   --body: #c8c8c8;
   --white: #f0f0f0;
+  --dim: #a3a3a3;
   --orange: #cb3a01;
   --orange-dim: #b03200;
   --orange-glow: rgba(255, 55, 1, 0.15);
@@ -130,7 +131,7 @@ body::before {
   color: var(--subtle);
   opacity: 70%;
   display: block;
-  letter-spacing:0.08em;
+  letter-spacing: 0.08em;
 }
 
 .landing-subtitle {
@@ -152,7 +153,6 @@ body::before {
   margin: 0 auto 60px;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.7s;
-  
 }
 
 .tier-grid {
@@ -181,8 +181,6 @@ body::before {
   text-align: left;
 }
 
-
-
 .tier-card::before {
   content: "";
   position: absolute;
@@ -190,7 +188,7 @@ body::before {
   left: 0;
   width: 3px;
   height: 0;
-  background: var(--orange-dim);
+  background: var(--orange);
   transition: height 0.4s ease;
 }
 
@@ -233,7 +231,7 @@ body::before {
   color: var(--subtle);
   line-height: 1.7;
   margin-bottom: 32px;
-  letter-spacing:0.07em;
+  letter-spacing: 0.07em;
 }
 
 .tier-cta {
@@ -271,8 +269,8 @@ body::before {
   top: 0;
   z-index: 100;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.70), rgba(8, 8, 8, 0.50)),
-    url('/global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(8, 8, 8, 0.5)),
+    url("/global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -365,7 +363,7 @@ body::before {
   font-size: 14px;
   color: var(--subtle);
   line-height: 1.7;
-  letter-spacing:0.05em;
+  letter-spacing: 0.05em;
   margin-bottom: 48px;
   max-width: 560px;
   font-style: normal;
@@ -402,7 +400,7 @@ body::before {
   font-weight: 500;
   color: var(--white);
   line-height: 1.4;
-  letter-spacing:0.07em;
+  letter-spacing: 0.07em;
 }
 
 .q-directive {
@@ -453,7 +451,7 @@ textarea::placeholder,
 input::placeholder {
   color: var(--muted);
   font-style: italic;
-  letter-spacing:0.03em;
+  letter-spacing: 0.03em;
 }
 
 select {
@@ -953,7 +951,6 @@ input.error {
   text-transform: uppercase;
 }
 
-
 /* ═══════════════════════════════════════════════════════════════════════════
    SCREEN BACKGROUNDS
    Edit the values below to customise each screen independently.
@@ -963,8 +960,8 @@ input.error {
 /* ── LANDING PAGE ─────────────────────────────────────────────────────────── */
 #landing {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.90), rgba(8, 8, 8, 0.50)),
-    url('/global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(8, 8, 8, 0.5)),
+    url("/global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -974,8 +971,8 @@ input.error {
 /* ── TIER 1 — Identity Launchpad ──────────────────────────────────────────── */
 #form-shell.tier-t1 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.70)),
-    url('/images/ts-global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.7)),
+    url("/images/ts-global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -984,8 +981,8 @@ input.error {
 /* ── TIER 2 — Digital Authority ───────────────────────────────────────────── */
 #form-shell.tier-t2 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.70)),
-    url('/images/ts-global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.7)),
+    url("/images/ts-global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -994,8 +991,8 @@ input.error {
 /* ── TIER 3 — Scale Partner ───────────────────────────────────────────────── */
 #form-shell.tier-t3 {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.70)),
-    url('/images/ts-global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.92), rgba(8, 8, 8, 0.7)),
+    url("/images/ts-global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1004,16 +1001,13 @@ input.error {
 /* ── CONFIRMATION SCREEN ──────────────────────────────────────────────────── */
 #confirm-screen {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.90), rgba(8, 8, 8, 0.50)),
-    url('/global-bg.avif');
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(8, 8, 8, 0.5)),
+    url("/global-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
 TIER CARD BACKGROUNDS
@@ -1023,23 +1017,22 @@ TIER CARD BACKGROUNDS
 .tier-card-t1 {
   background-image:
     linear-gradient(rgba(8, 8, 8, 0.85), rgb(0, 0, 1)),
-    url('/images/t1-card-bg.png');
+    url("/images/t1-card-bg.png");
 }
 
 /* Tier 2 — Front Door */
 .tier-card-t2 {
   background-image:
     linear-gradient(rgba(8, 8, 8, 0.85), rgb(0, 0, 1)),
-    url('/images/t2-card-bg.png');
+    url("/images/t2-card-bg.png");
 }
 
 /* Tier 3 — Architecture */
 .tier-card-t3 {
   background-image:
     linear-gradient(rgba(8, 8, 8, 0.85), rgb(0, 0, 1)),
-    url('/images/t3-card-bg.png');
+    url("/images/t3-card-bg.png");
 }
-
 
 /* ── LOADING SCREEN ───────────────────────────────────────────────────────── */
 .loading-screen {
@@ -1068,6 +1061,64 @@ TIER CARD BACKGROUNDS
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 0.2; }
-  50%       { opacity: 1;   }
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ── SAVE PROGRESS BUTTON ─────────────────────────────────────────────────── */
+.save-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0 0;
+  margin-bottom: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.btn-save {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border: 1px solid var(--dim);
+  background: var(--orange-glow);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.btn-save:hover:not(:disabled) {
+  border-color: var(--white);
+  background: var(--orange-dim);
+  color: var(--white);
+}
+
+.btn-save:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-save.saving {
+  border-color: var(--muted);
+  color: var(--muted);
+}
+
+.btn-save.saved {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+
+.save-hint {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
 }

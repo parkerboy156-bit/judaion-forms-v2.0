@@ -180,7 +180,7 @@ export default function Dashboard() {
                     style={{
                       height: "100%",
                       width: done ? "100%" : `${pct}%`,
-                      background: done ? "var(--subtle)" : "var(--red)",
+                      background: done ? "var(--subtle)" : "var(--orange)",
                       transition: "width 0.4s ease",
                     }}
                   />
