@@ -22,7 +22,8 @@ export default function FormSection({
   isLast,
 }) {
   const [localData, setLocalData] = useState({});
-  const [saveStatus, setSaveStatus] = useState("idle"); // 'idle' | 'saving' | 'saved'
+  const [saveStatus, setSaveStatus] = useState("idle"); // 'idle' | 'saving' | 'saved
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
   const dragItem = useRef(null);
   const dragOverItem = useRef(null);
@@ -98,6 +99,22 @@ export default function FormSection({
     }
     setErrors({});
     action(localData);
+  }
+
+  async function handleSubmitClick() {
+    const newErrors = validate();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      const firstErrorKey = Object.keys(newErrors)[0];
+      const el =
+        document.getElementById(firstErrorKey) ||
+        document.querySelector(`[data-errorkey="${firstErrorKey}"]`);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    setErrors({});
+    setIsSubmitting(true);
+    await onSubmit(localData);
   }
 
   async function handleSave() {
@@ -444,10 +461,11 @@ export default function FormSection({
         {isLast ? (
           <button
             type="button"
-            className="btn-nav primary"
-            onClick={() => collectAndAdvance(onSubmit)}
+            className={`btn-nav primary${isSubmitting ? " submitting" : ""}`}
+            onClick={handleSubmitClick}
+            disabled={isSubmitting}
           >
-            Submit Brief →
+            {isSubmitting ? "Sending..." : "Submit Brief →"}
           </button>
         ) : (
           <button

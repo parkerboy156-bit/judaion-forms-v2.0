@@ -1086,9 +1086,9 @@ TIER CARD BACKGROUNDS
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding: 12px 28px;
-  border: 1px solid var(--dim);
+  border: 1px solid var(--orange-dim);
   background: var(--orange-glow);
-  color: var(--white);
+  color: var(--orange);
   cursor: pointer;
   transition: all 0.2s;
   flex-shrink: 0;
@@ -1096,7 +1096,7 @@ TIER CARD BACKGROUNDS
 
 .btn-save:hover:not(:disabled) {
   border-color: var(--white);
-  background: var(--orange-dim);
+  background: var(--orange-glow);
   color: var(--white);
 }
 
@@ -1121,4 +1121,17 @@ TIER CARD BACKGROUNDS
   letter-spacing: 0.15em;
   color: var(--muted);
   text-transform: uppercase;
+}
+
+/* ── SUBMIT SENDING STATE ─────────────────────────────────────────────────── */
+.btn-nav.primary.submitting {
+  background: var(--red-dim);
+  border-color: var(--red-dim);
+  cursor: not-allowed;
+  animation: pulse-submit 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-submit {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
 }
