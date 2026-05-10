@@ -66,6 +66,21 @@ export default function FormSection({
         });
       }
 
+      // stages — only validate if a linked gate question was answered "yes"
+      // if gateId is set, check that the gate's first yesno item is "yes" before requiring input
+      if (q.type === "stages") {
+        const gateActive = q.gateId
+          ? localData[`${q.gateId}_yn0_val`] === "yes"
+          : true;
+        if (gateActive) {
+          q.stages.forEach((s) => {
+            if (s.required && (!localData[`${s.id}_name`] || localData[`${s.id}_name`].trim() === "")) {
+              newErrors[`${s.id}_name`] = true;
+            }
+          });
+        }
+      }
+
       // assettracker — every slot must have a direction entered
       if (q.type === "assettracker") {
         ASSET_SLOTS.forEach(({ slots }) => {
@@ -366,6 +381,50 @@ export default function FormSection({
     );
   }
 
+  function renderStages(q) {
+    return (
+      <div className="stages-wrap">
+        {q.stages.map((s) => {
+          const nameVal = localData[`${s.id}_name`] || "";
+          const descVal = localData[`${s.id}_desc`] || "";
+          const hasError = errors[`${s.id}_name`];
+          const isOptional = !s.required;
+          return (
+            <div
+              key={s.id}
+              className={`stage-row${isOptional ? " stage-optional" : ""}${hasError ? " error" : ""}`}
+              data-errorkey={`${s.id}_name`}
+            >
+              <span className="stage-num">{s.num}</span>
+              <input
+                type="text"
+                id={`${s.id}_name`}
+                placeholder={s.namePlaceholder || "Stage name"}
+                value={nameVal}
+                className={`stage-name-input${hasError ? " error" : ""}`}
+                onChange={(e) => {
+                  set(`${s.id}_name`, e.target.value);
+                  setErrors((prev) => ({ ...prev, [`${s.id}_name`]: false }));
+                }}
+              />
+              <input
+                type="text"
+                id={`${s.id}_desc`}
+                placeholder={s.descPlaceholder || "One-sentence description"}
+                value={descVal}
+                className="stage-desc-input"
+                onChange={(e) => set(`${s.id}_desc`, e.target.value)}
+              />
+            </div>
+          );
+        })}
+        {q.stages.some((s) => s.required && errors[`${s.id}_name`]) && (
+          <div className="error-msg">↑ Complete all required stages (01–03)</div>
+        )}
+      </div>
+    );
+  }
+
   function renderQuestion(q) {
     switch (q.type) {
       case "textarea":
@@ -380,6 +439,8 @@ export default function FormSection({
         return renderYesNo(q);
       case "priority":
         return renderPriority(q);
+      case "stages":
+        return renderStages(q);
       case "assettracker":
         return renderAssetTracker(q);
       default:

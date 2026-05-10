@@ -533,6 +533,7 @@ select option {
   font-size: 13px;
   color: var(--body);
   flex: 1;
+  letter-spacing: 0.03em
 }
 .yn-buttons {
   display: flex;
@@ -685,6 +686,7 @@ select option {
   font-size: 13px;
   color: var(--subtle);
   line-height: 1.7;
+  letter-spacing: 0.07em;
 }
 .scope-note strong {
   color: var(--body);

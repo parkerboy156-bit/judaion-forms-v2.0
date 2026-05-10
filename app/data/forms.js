@@ -203,13 +203,13 @@ export const FORMS = {
             rows: 1,
             placeholder: "Brand / Why it resonates",
           },
-                    {
+          {
             id: "t1_s3_q5_b",
             type: "textarea",
             rows: 1,
             placeholder: "Brand / Why it resonates",
           },
-                   {
+          {
             id: "t1_s3_q5_c",
             type: "textarea",
             rows: 1,
@@ -230,7 +230,8 @@ export const FORMS = {
             num: "",
             type: "textarea",
             rows: 3,
-            placeholder: "Post-brand target: Higher end clientele with quality team.",
+            placeholder:
+              "Post-brand target: Higher end clientele with quality team.",
           },
         ],
       },
@@ -316,22 +317,19 @@ export const FORMS = {
               "Choose 3 adjectives that describe how your brand should sound. Not what it looks like — how it speaks. Examples: Direct, Authoritative, Measured. These govern all written outputs.",
             type: "textarea",
             rows: 1,
-            placeholder:
-              "e.g. Direct ",
+            placeholder: "e.g. Direct ",
           },
-                    {
+          {
             id: "t1_s5_q1_b",
             type: "textarea",
             rows: 1,
-            placeholder:
-              "/ Authoritative",
+            placeholder: "/ Authoritative",
           },
-                              {
+          {
             id: "t1_s5_q1_c",
             type: "textarea",
             rows: 1,
-            placeholder:
-              "/ Intelligent",
+            placeholder: "/ Intelligent",
           },
           {
             id: "t1_s5_q2",
@@ -354,7 +352,7 @@ export const FORMS = {
             placeholder:
               "e.g. Never self-deprecating. No corporate buzzwords. Never sounds like we are trying too hard.",
           },
-                    {
+          {
             id: "t1_s5_q4",
             num: "5.4",
             label: "Your Email Address",
@@ -377,574 +375,528 @@ export const FORMS = {
   },
 
   t2: {
-    badge: "Tier 2 // Digital Authority",
+    badge: "T2 // Digital Authority",
     sections: [
+      // ── SECTION 01 — THE CURB APPEAL ──────────────────────────────────────
       {
-        tag: "// 01 — Strategic Foundation",
-        title: "THE\nOBJECTIVE",
+        tag: "Sect.01 // The Curb Appeal",
+        title: "VISUAL IDENTITY &\nFIRST IMPRESSION",
         subtitle:
-          "Before a single wireframe is considered, we establish the strategic intent of this digital asset.",
+          "The immediate emotional response when someone arrives at the digital property — the aesthetic, the materials, and the signage that defines the exterior before a single word is read.",
         scopeNote:
-          '<strong>Tier 2 scope includes:</strong> Strategic 5-page website (Home, Methodology, Services, About, Contact) // UX/UI Architecture // Mobile Engineering // On-Page SEO // Copywriting Integration // Performance Optimisation.<br><br><span class="scope-warning">IMPORTANT: Deployment to a live server is an optional add-on (R4,500). Confirm your selection in Section 07.</span>',
+          '<strong>Tier 2 scope includes:</strong> Strategic 5-page website // UX/UI Architecture // Mobile Engineering // On-Page SEO Foundation // Copywriting Integration // Performance Optimisation // Production-Ready ZIP Archive Delivery.<br><br><span class="scope-warning">NOTE: Our standard site structure is Home / Methodology / Services / About / Contact. You may propose an alternative layout in Section 03 — maximum 5 pages. If the Digital Deployment Add-On was selected in your SLA, complete Section 04 in full.</span>',
         questions: [
           {
             id: "t2_s1_q1",
             num: "1.1",
-            label: "The Primary Conversion Goal",
+            label: "The First Impression",
             directive:
-              "The single most important action you want a visitor to take. Do not list multiple. Identify the ONE primary conversion event.",
+              "What is the very first thing a visitor should FEEL when they land on your site? Before they read a word — what emotional response should the visual environment trigger?",
             type: "textarea",
-            rows: 2,
+            rows: 3,
             placeholder:
-              "e.g. Book a discovery call / Submit a project brief / Send a WhatsApp inquiry",
+              "e.g. Immediate confidence that this is a premium operator. A sense of calm authority. This is not like anything else in the market.",
           },
           {
             id: "t2_s1_q2",
             num: "1.2",
-            label: "The Secondary Conversion Goal",
+            label: "Visual Reference Sites",
             directive:
-              "If the visitor is not ready to convert, what is the next best action you want them to take?",
+              "Provide 3 websites — from any industry — that represent the visual standard and aesthetic direction you want this site to achieve. For each, note what specifically resonates: layout density, typography scale, colour restraint, or overall feeling. Only sites you would be proud to be compared to.",
             type: "textarea",
-            rows: 2,
-            placeholder: "e.g. Follow on LinkedIn / Subscribe to newsletter",
+            rows: 1,
+            placeholder: "URL / What specifically resonates",
+          },
+          {
+            id: "t2_s1_q2_b",
+            type: "textarea",
+            rows: 1,
+            placeholder: "URL / What specifically resonates",
+          },
+          {
+            id: "t2_s1_q2_c",
+            type: "textarea",
+            rows: 1,
+            placeholder: "URL / What specifically resonates",
           },
           {
             id: "t2_s1_q3",
             num: "1.3",
-            label: "The Problem This Website Must Solve",
-            directive:
-              "What specific commercial problem is your current online presence failing to address? Be specific — this defines the brief.",
-            type: "textarea",
-            rows: 3,
-            placeholder: "e.g. We lose credibility when prospects Google us.",
-          },
-          {
-            id: "t2_s1_q4",
-            num: "1.4",
-            label: "The Definition of Success",
-            directive:
-              "How will you know this website is working? Define 1–2 measurable indicators of success.",
-            type: "textarea",
-            rows: 3,
-            placeholder:
-              "e.g. A 30% increase in qualified inquiries within 3 months.",
-          },
-          {
-            id: "t2_s1_q5",
-            num: "1.5",
-            label: "Brand Asset Status",
-            directive: "Confirm your brand asset readiness.",
-            type: "yesno",
-            items: [
-              "Tier 1 Identity Launchpad completed with JUDAION Studios",
-              "Existing brand assets available in production-ready format",
-              "Logo files available in vector format (.ai / .eps / .svg)",
-              "Brand Style Guide or documentation available",
-            ],
-          },
-          {
-            id: "t2_s1_q5_notes",
-            num: "",
-            label: "Asset Status Notes",
-            directive: "Any important context on your brand asset status.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Notes on asset availability.",
-          },
-        ],
-      },
-      {
-        tag: "// 02 — Audience Intelligence",
-        title: "THE\nVISITOR",
-        subtitle:
-          "Understanding who will land on this site — their mindset, objections, and the decision they need to be led to make.",
-        questions: [
-          {
-            id: "t2_s2_q1",
-            num: "2.1",
-            label: "The Primary Visitor Profile",
-            directive:
-              "Describe the primary person landing on this website. Role, industry, budget authority, and the specific problem that brought them here.",
-            type: "textarea",
-            rows: 4,
-            placeholder:
-              "The individual in front of the screen making a decision.",
-          },
-          {
-            id: "t2_s2_q2",
-            num: "2.2",
-            label: "The Visitor's Primary Objection",
-            directive:
-              "What is the single biggest hesitation your ideal visitor carries before they contact you? What makes them close the tab instead of sending the inquiry?",
-            type: "textarea",
-            rows: 3,
-            placeholder:
-              "e.g. They don't believe we can deliver at this price point.",
-          },
-          {
-            id: "t2_s2_q3",
-            num: "2.3",
-            label: "Trust Signals Required",
-            directive:
-              "What evidence does your visitor need before they act? Rank in order of importance for YOUR specific audience.",
-            type: "priority",
-            items: [
-              "Case studies / project outcomes",
-              "Client testimonials or social proof",
-              "Credentials, awards or certifications",
-              "Named client roster or portfolio",
-              "Team profiles and founder story",
-              "Methodology or process transparency",
-              "Press features or media mentions",
-            ],
-          },
-          {
-            id: "t2_s2_q4",
-            num: "2.4",
-            label: "The Referral Source",
-            directive:
-              "How will most visitors arrive at this website? Understanding traffic source changes the entry-point strategy.",
-            type: "textarea",
-            rows: 2,
-            placeholder:
-              "e.g. Primarily LinkedIn referrals / Cold outreach / Google search",
-          },
-          {
-            id: "t2_s2_q5",
-            num: "2.5",
-            label: "Device Behaviour",
-            directive:
-              "Based on your knowledge of your audience, what device do they most likely use when researching vendors of your type?",
-            type: "scales",
-            scales: [
-              {
-                label: "Device Priority",
-                left: "DESKTOP-FIRST",
-                right: "MOBILE-FIRST",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        tag: "// 03 — Site Architecture",
-        title: "THE\nSTRUCTURE",
-        subtitle:
-          "Mapping the 5-page information architecture — what each page must communicate and the flow that moves a visitor toward conversion.",
-        questions: [
-          {
-            id: "t2_s3_q1",
-            num: "3.1",
-            label: "Home — Hero Statement (H1)",
-            directive:
-              "The headline a visitor reads first. It must stop them. Provide your H1 or describe what you want a visitor to FEEL and UNDERSTAND in the first 5 seconds.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Your opening statement.",
-          },
-          {
-            id: "t2_s3_q2",
-            num: "3.1",
-            label: "Home — Supporting Subheading",
-            directive: "The subheading that supports and expands the H1.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "The sentence beneath the headline.",
-          },
-          {
-            id: "t2_s3_q3",
-            num: "3.2",
-            label: "Home — Proof Element",
-            directive:
-              "What single proof element appears on Home to immediately establish authority? Provide the exact content or data.",
-            type: "textarea",
-            rows: 2,
-            placeholder:
-              "e.g. Featured client logos / Key statistic / Award / Case study result",
-          },
-          {
-            id: "t2_s3_q4",
-            num: "3.3",
-            label: "Methodology — Your Process",
-            directive:
-              "Define your delivery process in 3–6 named stages. Each needs a name and one-sentence description.",
-            type: "textarea",
-            rows: 8,
-            placeholder:
-              "Stage 01: [Name] — [One-sentence description]\nStage 02: ...",
-          },
-          {
-            id: "t2_s3_q5",
-            num: "3.4",
-            label: "Methodology — Philosophy Statement",
-            directive:
-              "What core belief underpins your process? In 2–3 sentences, what do you believe about HOW work should be done that competitors do not?",
-            type: "textarea",
-            rows: 3,
-            placeholder: "Your philosophy.",
-          },
-          {
-            id: "t2_s3_q6",
-            num: "3.5",
-            label: "Services — Offerings",
-            directive:
-              "List every service appearing on this page. For each: (a) exact service name, (b) 2–3 sentence outcome-focused description, (c) whether pricing will be displayed publicly.",
-            type: "textarea",
-            rows: 8,
-            placeholder:
-              "Service name / Description / Pricing visible: Yes or No",
-          },
-          {
-            id: "t2_s3_q7",
-            num: "3.6",
-            label: "Services — Page CTA",
-            directive:
-              "What action do you want a visitor to take directly from the Services page? Define exact CTA text and destination.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "CTA text + destination",
-          },
-          {
-            id: "t2_s3_q8",
-            num: "3.7",
-            label: "About — Founder / Studio Story",
-            directive:
-              "The narrative for the About page. Not a CV — a position statement. Why does this business exist? First or third person — indicate which.",
-            type: "textarea",
-            rows: 5,
-            placeholder: "Your position statement.",
-          },
-          {
-            id: "t2_s3_q9",
-            num: "3.8",
-            label: "About — Team / Leadership",
-            directive:
-              "List team members or advisors to feature. Name, role, 1–2 sentence bio, and confirm if a professional headshot is available.",
-            type: "textarea",
-            rows: 4,
-            placeholder: "Name / Role / Bio / Headshot: Yes or No",
-          },
-          {
-            id: "t2_s3_q10",
-            num: "3.9",
-            label: "Contact — Form Fields",
-            directive:
-              "What information must the contact form capture? Only include fields you genuinely need.",
-            type: "textarea",
-            rows: 3,
-            placeholder:
-              "e.g. Name / Company / Email / Budget Range / Project Description",
-          },
-          {
-            id: "t2_s3_q11",
-            num: "3.10",
-            label: "Contact — Supporting Details",
-            directive:
-              "Business email, phone, WhatsApp link, physical address, business hours, and social handles to be linked.",
-            type: "textarea",
-            rows: 3,
-            placeholder: "Contact details for the Contact page.",
-          },
-        ],
-      },
-      {
-        tag: "// 04 — Visual & Brand Language",
-        title: "THE\nAESTHETIC",
-        subtitle:
-          "Translating brand identity into a digital visual environment — the coded language your website speaks before a word is read.",
-        questions: [
-          {
-            id: "t2_s4_q1",
-            num: "4.1",
-            label: "Visual Reference Sites",
-            directive:
-              "Provide 3–5 websites representing the visual standard you want to achieve. For each, note what specifically resonates.",
-            type: "textarea",
-            rows: 5,
-            placeholder: "URL / What resonates specifically",
-          },
-          {
-            id: "t2_s4_q2",
-            num: "4.2",
             label: "Layout Disposition",
             directive:
-              "Select your position on each axis. These govern layout architecture decisions.",
+              "Select your position on each axis. These govern layout architecture, whitespace, and visual weight decisions across the entire site.",
             type: "scales",
             scales: [
               {
-                label: "Content density",
                 left: "DENSE / CONTENT-RICH",
                 right: "MINIMAL / SPACIOUS",
               },
               {
-                label: "Interaction style",
                 left: "STATIC / EDITORIAL",
                 right: "DYNAMIC / INTERACTIVE",
               },
               {
-                label: "Visual weight",
                 left: "IMAGE-DRIVEN",
                 right: "TYPE-DRIVEN",
               },
               {
-                label: "Palette",
                 left: "DARK PALETTE",
                 right: "LIGHT PALETTE",
               },
             ],
           },
           {
-            id: "t2_s4_q3",
-            num: "4.3",
-            label: "Photography & Visual Assets",
-            directive:
-              "Confirm current asset availability. A premium website built on low-resolution imagery is a structural failure.",
-            type: "yesno",
-            items: [
-              "Professional photography of team / founder",
-              "Professional photography of workspace or environment",
-              "High-resolution project or work sample imagery",
-              "Client-approved project photography or screenshots",
-              "Brand-aligned licensed stock imagery",
-            ],
-          },
-          {
-            id: "t2_s4_q3_notes",
-            num: "",
-            label: "Photography Notes",
-            directive: "Any constraints or context on your visual assets.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Photography constraints.",
-          },
-          {
-            id: "t2_s4_q4",
-            num: "4.4",
+            id: "t2_s1_q4",
+            num: "1.4",
             label: "Absolute Visual Exclusions",
             directive:
-              "What visual approaches, aesthetics or trends must NEVER appear? Be specific and decisive.",
+              "What visual approaches, aesthetics or design trends must NEVER appear on this website? Be specific — vague answers produce vague exclusions.",
             type: "textarea",
             rows: 3,
             placeholder:
-              "e.g. No parallax scrolling. No generic stock photography. Nothing that looks like a template.",
+              "e.g. No parallax scrolling. No stock photography of generic business people. No gradient backgrounds. Nothing that looks like a template.",
+          },
+          {
+            id: "t2_s1_q5",
+            num: "1.5",
+            label: "Brand Asset Status",
+            directive:
+              "Confirm your brand asset readiness. Low-resolution or incomplete assets will delay delivery.",
+            type: "yesno",
+            items: [
+              "Tier 1 Identity Launchpad completed with JUDAION Studios",
+              "Logo files available in vector format (.ai / .eps / .svg)",
+              "Brand Style Guide or usage documentation available",
+              "Existing brand assets available in production-ready format",
+            ],
+          },
+          {
+            id: "t2_s1_q5_notes",
+            num: "",
+            label: "Asset Notes & Constraints",
+            directive:
+              "Note anything relevant — unavailable files, limitations, or context that may affect how brand marks are deployed on the site.",
+            type: "textarea",
+            rows: 2,
+            placeholder: "Asset constraints or context.",
           },
         ],
       },
+
+      // ── SECTION 02 — THE THRESHOLD ────────────────────────────────────────
       {
-        tag: "// 05 — Technical & SEO",
-        title: "THE\nINFRASTRUCTURE",
+        tag: "Sect.02 // The Threshold",
+        title: "USER JOURNEY &\nNAVIGATION",
         subtitle:
-          "Establishing the technical parameters that govern SEO, performance optimisation, and mobile engineering.",
+          "Where the visitor decides to step inside. This covers the ease of entry, the primary message that greets them at the door, and the key value propositions they need before they walk in.",
         questions: [
           {
-            id: "t2_s5_q1",
-            num: "5.1",
-            label: "Domain Name",
-            directive: "Your domain name exactly as registered.",
-            type: "text",
-            placeholder: "e.g. yourbusiness.co.za",
+            id: "t2_s2_q1",
+            num: "2.1",
+            label: "The Hero Statement",
+            directive:
+              "What headline and subheading will appear in the hero section of the Home page? If you do not have copy yet, describe in plain language what you want a visitor to FEEL and UNDERSTAND within the first 5 seconds. Copy will be structured from that intelligence.",
+            type: "textarea",
+            rows: 4,
+            placeholder:
+              "Proposed H1 headline / Supporting subheading — or describe the intended feeling and message.",
           },
           {
-            id: "t2_s5_q2",
-            num: "5.1",
+            id: "t2_s2_q2",
+            num: "2.2",
+            label: "The Home Page Proof Element",
+            directive:
+              "What single piece of evidence will appear immediately to establish authority? Provide the exact content or data.",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "e.g. Featured client logo strip / Key statistic / Award / Headline case study result",
+          },
+          {
+            id: "t2_s2_q3",
+            num: "2.3",
+            label: "The Visitor's Primary Objection",
+            directive:
+              "Before they contact you, what is the single biggest hesitation your ideal visitor carries? What makes them close the tab instead of sending the inquiry? The site architecture is built to neutralise this — so name it precisely.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "e.g. They don't believe we can deliver at this price point. The site doesn't feel premium enough to justify the fee.",
+          },
+          {
+            id: "t2_s2_q4",
+            num: "2.4",
+            label: "Primary Conversion Goal",
+            directive:
+              "What is the single most important action you want a visitor to take? One action only — this becomes the primary CTA the entire site is engineered around.",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "e.g. Book a discovery call. Submit a project brief. Send a WhatsApp inquiry.",
+          },
+          {
+            id: "t2_s2_q5",
+            num: "2.5",
+            label: "Secondary Conversion Goal",
+            directive:
+              "If the visitor is not ready to act yet, what is the next best step? This becomes the secondary CTA woven throughout the site — a lower-commitment way to stay connected.",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "e.g. Follow on LinkedIn. Download a capability deck. Subscribe to newsletter.",
+          },
+        ],
+      },
+
+      // ── SECTION 03 — THE INTERIOR FLOW ───────────────────────────────────
+      {
+        tag: "Sect.03 // The Interior Flow",
+        title: "CONTENT STRATEGY\n& LAYOUT",
+        subtitle:
+          "Once inside, the visitor needs to move through the space logically. This section defines the floor plan — the purpose of each room, the furniture it needs, and where the brand's personality should shine through most clearly.",
+        questions: [
+          {
+            id: "t2_s3_q0",
+            num: "3.0",
+            label: "Your Site Architecture",
+            directive:
+              "Our standard 5-page structure is: Home / Methodology / Services / About / Contact. This is a proven conversion framework — but if your business requires a different layout, tell us here. Maximum 5 pages. If the standard structure works for you, write 'Standard' and move on.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "Standard — OR — list your 5 pages: Page 1 name / Page 2 name / Page 3 name / Page 4 name / Page 5 name",
+          },
+          {
+            id: "t2_s3_q1",
+            num: "3.1",
+            label: "Page Tracker — Purpose & Copy Status",
+            directive:
+              "For each of your 5 pages (use the structure confirmed in 3.0), define its primary purpose and confirm copy status: Final (written and approved), Draft (exists but needs refinement), or None (will be structured from your inputs and Tier 1 Blueprint).",
+            type: "textarea",
+            rows: 1,
+            placeholder: "Page 1 — Purpose: / Copy: Final / Draft / None",
+          },
+          {
+            id: "t2_s3_q1_2",
+            type: "textarea",
+            rows: 1,
+            placeholder: "Page 2 — Purpose: / Copy: Final / Draft / None",
+          },
+          {
+            id: "t2_s3_q1_3",
+            type: "textarea",
+            rows: 1,
+            placeholder: "Page 3 — Purpose: / Copy: Final / Draft / None",
+          },
+          {
+            id: "t2_s3_q1_4",
+            type: "textarea",
+            rows: 1,
+            placeholder: "Page 4 — Purpose: / Copy: Final / Draft / None",
+          },
+          {
+            id: "t2_s3_q1_5",
+            type: "textarea",
+            rows: 1,
+            placeholder: "Page 5 — Purpose: / Copy: Final / Draft / None",
+          },
+          {
+            id: "t2_s3_q2_gate",
+            num: "3.2",
+            label:
+              "Does Your Site Include a Dedicated Process or Methodology Page?",
+            directive:
+              "One of the most powerful pages a service business can have is a page dedicated entirely to HOW you work — not what you offer, but the method behind it. This may be named Methodology, Process, Our Approach, How We Work, or something entirely your own. Does your site structure include a page like this?",
+            type: "yesno",
+            items: [
+              "Yes — my site includes a dedicated page for my process or methodology",
+              "No — I do not have a process page in my structure",
+              "Unsure — I would like JUDAION to recommend based on my structure",
+            ],
+          },
+          {
+            id: "t2_s3_q2",
+            num: "3.2",
+            label: "Your Process Architecture",
+            directive:
+              "If yes above — name each stage of your delivery process and describe what happens in it. Minimum 3 stages, maximum 6. This is HOW you work, not a list of services. Skip this question entirely if you answered No or Unsure above.",
+            type: "stages",
+            gateId: "t2_s3_q2_gate",
+            minStages: 3,
+            maxStages: 6,
+            stages: [
+              {
+                id: "t2_s3_q2_stage1",
+                num: "Stage 01",
+                namePlaceholder: "e.g. Extraction",
+                descPlaceholder:
+                  "e.g. We interrogate the raw intelligence of your business before a single creative decision is made.",
+                required: true,
+              },
+              {
+                id: "t2_s3_q2_stage2",
+                num: "Stage 02",
+                namePlaceholder: "e.g. Blueprint",
+                descPlaceholder:
+                  "e.g. Strategic architecture is defined — positioning, audience, and visual direction are locked.",
+                required: true,
+              },
+              {
+                id: "t2_s3_q2_stage3",
+                num: "Stage 03",
+                namePlaceholder: "e.g. Build",
+                descPlaceholder:
+                  "e.g. Design and development begins against the approved blueprint.",
+                required: true,
+              },
+              {
+                id: "t2_s3_q2_stage4",
+                num: "Stage 04",
+                namePlaceholder: "Optional",
+                descPlaceholder:
+                  "Add a stage if your process has a distinct fourth phase.",
+                required: false,
+              },
+              {
+                id: "t2_s3_q2_stage5",
+                num: "Stage 05",
+                namePlaceholder: "Optional",
+                descPlaceholder:
+                  "Add a stage if your process has a distinct fifth phase.",
+                required: false,
+              },
+              {
+                id: "t2_s3_q2_stage6",
+                num: "Stage 06",
+                namePlaceholder: "Optional",
+                descPlaceholder:
+                  "Add a stage if your process has a distinct sixth phase.",
+                required: false,
+              },
+            ],
+          },
+          {
+            id: "t2_s3_q3",
+            num: "3.3",
+            label: "Service Offerings",
+            directive:
+              "List every service appearing on the Services page. For each: (a) the exact public-facing name, (b) a 2–3 sentence description in client-outcome language, (c) whether pricing will be displayed publicly.",
+            type: "textarea",
+            rows: 8,
+            placeholder:
+              "Service name / Outcome-focused description / Pricing visible: Yes or No",
+          },
+          {
+            id: "t2_s3_q4",
+            num: "3.4",
+            label: "Founder / Studio Story",
+            directive:
+              "The narrative for the About page. Not a CV — a position statement. Why does this business exist and what gives you the authority to do what you do? Indicate first or third person preference. If you need this drafted, note it here — the Tier 1 Blueprint will be used as source intelligence.",
+            type: "textarea",
+            rows: 5,
+            placeholder:
+              "Your position statement — or note 'Draft from Tier 1 Blueprint'.",
+          },
+          {
+            id: "t2_s3_q5",
+            num: "3.5",
+            label: "Photography & Visual Asset Inventory",
+            directive:
+              "Confirm what visual assets currently exist. A premium website built on low-resolution or unavailable imagery is a structural failure — gaps declared here will be designed around.",
+            type: "yesno",
+            items: [
+              "Professional photography of team / founder",
+              "Professional photography of workspace or studio environment",
+              "High-resolution project work samples or case study imagery",
+              "Client-approved project photography or screenshots",
+            ],
+          },
+          {
+            id: "t2_s3_q5_notes",
+            num: "",
+            label: "Photography Notes & Constraints",
+            directive:
+              "Note any limitations, gaps, or context on your available imagery.",
+            type: "textarea",
+            rows: 2,
+            placeholder: "Photography constraints or context.",
+          },
+          {
+            id: "t2_s3_q6",
+            num: "3.6",
+            label: "Where Should the Brand Voice Shine?",
+            directive:
+              "Which page or section should most clearly express your brand's personality and tone — where the writing feels most distinctly YOU rather than purely functional?",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "e.g. The About page should feel most personal. The Methodology page should carry the most authority.",
+          },
+        ],
+      },
+
+      // ── SECTION 04 — THE LOCKS & SECURITY ────────────────────────────────
+      {
+        tag: "Sect.04 // The Locks & Security",
+        title: "TECHNICAL\nINFRASTRUCTURE",
+        subtitle:
+          "A front door is only functional if it is secure and well-installed. This section covers the hardware of the site — domain, hosting, compliance, integrations, and the technical foundation the build sits on.",
+        scopeNote:
+          "<strong>DEPLOYMENT ADD-ON:</strong> Your selection of the Digital Deployment Add-On (R4,500) was confirmed in your signed Service Level Agreement. If you selected the add-on, complete all fields in this section in full. If you did not select the add-on, enter N/A in each field — your deliverable is a production-ready ZIP Archive for self-managed deployment.",
+        questions: [
+          {
+            id: "t2_s4_q1",
+            num: "4.1",
+            label: "Domain Name",
+            directive:
+              "Your domain name exactly as registered. Required for server configuration and DNS mapping.",
+            type: "text",
+            placeholder: "e.g. yourbusiness.co.za — or N/A",
+          },
+          {
+            id: "t2_s4_q2",
+            num: "4.2",
             label: "Hosting Provider",
             directive:
-              "Current hosting provider name, if active hosting exists.",
+              "Current hosting provider name. JUDAION Studios will require administrative access to configure the server environment.",
             type: "text",
-            placeholder: "e.g. Afrihost / Hetzner / WP Engine",
+            placeholder: "e.g. Afrihost / Hetzner / WP Engine — or N/A",
           },
           {
-            id: "t2_s5_q3",
-            num: "5.1",
-            label: "Hosting & Domain Status",
-            directive: "Confirm your infrastructure status.",
+            id: "t2_s4_q3",
+            num: "4.3",
+            label: "Hosting & Domain Access Status",
+            directive:
+              "Confirm administrative access availability. Without these, deployment cannot proceed.",
             type: "yesno",
             items: [
               "Active hosting account currently in place",
               "Administrative access to hosting account available",
               "Administrative access to domain registrar available",
+              "SSL certificate in place or to be activated on deployment",
+              "Privacy Policy page required",
+              "POPI Act compliance required — client data handling declarations needed",
             ],
           },
           {
-            id: "t2_s5_q4",
-            num: "5.2",
-            label: "Target Keywords",
+            id: "t2_s4_q4",
+            num: "4.4",
+            label: "Compliance Notes",
             directive:
-              "List the 5–10 search terms your ideal client would type to find a business like yours.",
+              "Note any specific data protection, privacy or legal compliance requirements. Flag anything uncertain for review.",
+            type: "textarea",
+            rows: 2,
+            placeholder: "Compliance context or requirements — or N/A",
+          },
+          {
+            id: "t2_s4_q5",
+            num: "4.5",
+            label: "Target Search Terms",
+            directive:
+              "List 5–10 search terms your ideal client would type into Google to find a business like yours. Use the language your clients actually use — not internal industry terms. These become the on-page SEO foundation built into every page regardless of deployment method.",
             type: "textarea",
             rows: 4,
             placeholder:
-              "e.g. brand identity design Johannesburg\npremium logo design South Africa",
+              "e.g. brand identity design Johannesburg\npremium logo design South Africa\nbranding agency for startups",
+          },
+          {
+            id: "t2_s4_q6",
+            num: "4.6",
+            label: "Third-Party Integrations",
+            directive:
+              "List any tools or platforms that must be functional on the delivered site, and their purpose. Applies to both ZIP delivery and deployed builds.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "Tool / Purpose\ne.g. Calendly — discovery call booking\nGoogle Analytics 4 — performance tracking\nMeta Pixel — paid ad retargeting\n\nOr N/A",
+          },
+          {
+            id: "t2_s4_q7_notes",
+            num: "4.7",
+            label: "Self-Deploy Technical Capacity",
+            directive:
+              "If you did NOT select the Deployment Add-On — confirm who will be handling deployment on your side. Name and role of the developer or technical contact responsible for taking the ZIP Archive live.",
+            type: "textarea",
+            rows: 2,
+            placeholder: "Developer name / Role — or N/A if add-on selected",
+          },
+        ],
+      },
+
+      // ── SECTION 05 — THE INVITATION ───────────────────────────────────────
+      {
+        tag: "Sect.05 // The Invitation",
+        title: "THE CALL\nTO ACTION",
+        subtitle:
+          "The final part of the front door experience — the reason the visitor came over in the first place. This section defines the handshake, the RSVP mechanism, and the final authority statement that closes the brief.",
+        questions: [
+          {
+            id: "t2_s5_q1",
+            num: "5.1",
+            label: "The Business Problem This Website Must Solve",
+            directive:
+              "What is the specific commercial problem your current online presence is failing to address? This is the reason the build exists — be direct.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "e.g. We lose credibility when prospects Google us. We cannot send a link that justifies our pricing. We attract the wrong type of inquiry.",
+          },
+          {
+            id: "t2_s5_q2",
+            num: "5.2",
+            label: "Contact Form Fields",
+            directive:
+              "What information must the contact form capture before you can qualify an inquiry? List only the fields you genuinely need — every unnecessary field reduces form completion.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "e.g. Name / Company / Email / Budget Range / Project Description / How did you hear about us?",
+          },
+          {
+            id: "t2_s5_q3",
+            num: "5.3",
+            label: "Contact Page Supporting Details",
+            directive:
+              "Provide all details for the Contact page: primary business email, phone number (if to be displayed), WhatsApp link, business hours or response time promise, and social media handles to be linked.",
+            type: "textarea",
+            rows: 3,
+            placeholder:
+              "Email / Phone / WhatsApp / Business hours / Social handles",
+          },
+          {
+            id: "t2_s5_q4",
+            num: "5.4",
+            label: "Services Page CTA",
+            directive:
+              "What action do you want a visitor to take directly from the Services page? Define the exact CTA text and its destination.",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "e.g. 'Request a custom proposal' → contact form. 'Book a discovery call' → Calendly link.",
           },
           {
             id: "t2_s5_q5",
-            num: "5.3",
-            label: "Geographic Targeting",
+            num: "5.5",
+            label: "Final Authority Statement",
             directive:
-              "Local, national or international audience? If local — specify city or region.",
+              "What is the single most important thing you want a prospect to believe about your business by the time they reach the contact page? This becomes the closing statement that reinforces your position before they send the inquiry.",
             type: "textarea",
-            rows: 2,
-            placeholder: "e.g. Primarily Johannesburg and Cape Town",
+            rows: 3,
+            placeholder:
+              "The belief that must be established before they hit send.",
           },
           {
             id: "t2_s5_q6",
-            num: "5.4",
-            label: "Competitor SEO Benchmarks",
+            num: "5.6",
+            label: "Approval & Sign-Off Process",
             directive:
-              "List 2–3 competitor websites that consistently outrank you for your target terms.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Competitor website URLs",
-          },
-          {
-            id: "t2_s5_q7",
-            num: "5.5",
-            label: "Third-Party Integrations",
-            directive:
-              "Any tools or platforms that must be functional on the delivered site.",
-            type: "textarea",
-            rows: 3,
-            placeholder:
-              "e.g. Calendly embed / Google Analytics 4 / Mailchimp form / WhatsApp widget / Meta Pixel",
-          },
-        ],
-      },
-      {
-        tag: "// 06 — Copywriting & Content",
-        title: "THE\nLANGUAGE",
-        subtitle:
-          "Defining the verbal architecture — what is client-supplied, what will be structured by JUDAION, and what governs the written voice.",
-        questions: [
-          {
-            id: "t2_s6_q1",
-            num: "6.1",
-            label: "Copy Availability",
-            directive:
-              "For each page, indicate copy status: Final, Draft or None.",
-            type: "textarea",
-            rows: 6,
-            placeholder:
-              "HOME: Final / Draft / None\nMETHODOLOGY: Final / Draft / None\nSERVICES: Final / Draft / None\nABOUT: Final / Draft / None\nCONTACT: Final / Draft / None",
-          },
-          {
-            id: "t2_s6_q2",
-            num: "6.2",
-            label: "Tone & Voice",
-            directive:
-              "Select your position on each axis to confirm the verbal register.",
-            type: "scales",
-            scales: [
-              {
-                label: "Register",
-                left: "FORMAL / CORPORATE",
-                right: "DIRECT / CONVERSATIONAL",
-              },
-              {
-                label: "Assertiveness",
-                left: "RESERVED / UNDERSTATED",
-                right: "ASSERTIVE / COMMANDING",
-              },
-              {
-                label: "Approach",
-                left: "EDUCATIONAL",
-                right: "PERSUASIVE / COMMERCIAL",
-              },
-            ],
-          },
-          {
-            id: "t2_s6_q3",
-            num: "6.3",
-            label: "Language Conventions",
-            directive:
-              "Any regional spelling conventions, localisation requirements or terminology preferences?",
-            type: "textarea",
-            rows: 2,
-            placeholder:
-              "e.g. South African English spelling. Use Rand / R not $ in all pricing references.",
-          },
-          {
-            id: "t2_s6_q4",
-            num: "6.4",
-            label: "Mandatory Proprietary Language",
-            directive:
-              "Any proprietary terms or service names that MUST appear exactly as written?",
-            type: "textarea",
-            rows: 3,
-            placeholder: "Exact terms and phrases.",
-          },
-          {
-            id: "t2_s6_q5",
-            num: "6.5",
-            label: "Language to Avoid",
-            directive:
-              "Words, phrases or communication styles that must NEVER appear on this website.",
-            type: "textarea",
-            rows: 2,
-            placeholder:
-              'e.g. Never use "cheap" or "affordable". Avoid passive voice.',
-          },
-        ],
-      },
-      {
-        tag: "// 07 — Deployment & Logistics",
-        title: "THE\nHANDOVER",
-        subtitle:
-          "Confirming delivery parameters, add-on selections, and logistics for a clean, on-time handover.",
-        questions: [
-          {
-            id: "t2_s7_q1",
-            num: "7.1",
-            label: "Deployment Add-On Selection",
-            directive:
-              "The base Tier 2 deliverable is a structured ZIP Archive. The Digital Deployment Add-On (R4,500) covers server configuration, SSL activation, domain mapping, and live environment audit.",
-            type: "yesno",
-            items: [
-              "Confirm Digital Deployment Add-On (R4,500)",
-              "Self-managed deployment — ZIP Archive delivery only",
-            ],
-          },
-          {
-            id: "t2_s7_q2",
-            num: "7.1",
-            label: "Self-Deploy Technical Capacity",
-            directive:
-              "If self-deploying, confirm your developer or technical capacity.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Developer name or technical context.",
-          },
-          {
-            id: "t2_s7_q3",
-            num: "7.3",
-            label: "Hard Deadlines",
-            directive:
-              "Non-negotiable launch deadlines tied to business events, campaigns or presentations. State exact dates.",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Event / Date",
-          },
-          {
-            id: "t2_s7_q4",
-            num: "7.4",
-            label: "Approval Decision-Maker",
-            directive:
-              "Who is the final decision-maker for approvals? If multiple stakeholders, list each by name and role.",
+              "Who is the final decision-maker for approvals on this project? If multiple stakeholders are involved in sign-off, list each by name and role. Undefined approval chains are the primary cause of project delays.",
             type: "textarea",
             rows: 2,
             placeholder: "Name / Role",
           },
           {
-            id: "t2_s7_q5",
-            num: "7.5",
-            label: "File Delivery Preferences",
-            directive:
-              "Any specific file organisation requirements or delivery method preferences?",
-            type: "textarea",
-            rows: 2,
-            placeholder: "Delivery preferences.",
-          },
-          {
-            id: "t2_s7_q6",
+            id: "t2_s5_q7",
             num: "",
             label: "Your Email Address",
             directive:
@@ -953,7 +905,7 @@ export const FORMS = {
             placeholder: "your@email.com",
           },
           {
-            id: "t2_s7_q7",
+            id: "t2_s5_q8",
             num: "",
             label: "Your Full Name",
             directive: "For our records and correspondence.",
