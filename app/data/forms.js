@@ -377,7 +377,6 @@ export const FORMS = {
   t2: {
     badge: "T2 // Digital Authority",
     sections: [
-      // ── SECTION 01 — THE CURB APPEAL ──────────────────────────────────────
       {
         tag: "Sect.01 // The Curb Appeal",
         title: "VISUAL IDENTITY &\nFIRST IMPRESSION",
@@ -483,7 +482,6 @@ export const FORMS = {
         ],
       },
 
-      // ── SECTION 02 — THE THRESHOLD ────────────────────────────────────────
       {
         tag: "Sect.02 // The Threshold",
         title: "USER JOURNEY &\nNAVIGATION",
@@ -548,7 +546,6 @@ export const FORMS = {
         ],
       },
 
-      // ── SECTION 03 — THE INTERIOR FLOW ───────────────────────────────────
       {
         tag: "Sect.03 // The Interior Flow",
         title: "CONTENT STRATEGY\n& LAYOUT",
@@ -750,7 +747,6 @@ export const FORMS = {
         ],
       },
 
-      // ── SECTION 04 — THE LOCKS & SECURITY ────────────────────────────────
       {
         tag: "Sect.04 // The Locks & Security",
         title: "TECHNICAL\nINFRASTRUCTURE",
@@ -827,7 +823,6 @@ export const FORMS = {
         ],
       },
 
-      // ── SECTION 05 — THE INVITATION ───────────────────────────────────────
       {
         tag: "Sect.05 // The Invitation",
         title: "THE CALL\nTO ACTION",
