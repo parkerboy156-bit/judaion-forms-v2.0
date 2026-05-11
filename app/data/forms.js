@@ -384,7 +384,7 @@ export const FORMS = {
         subtitle:
           "The immediate emotional response when someone arrives at the digital property — the aesthetic, the materials, and the signage that defines the exterior before a single word is read.",
         scopeNote:
-          '<strong>Tier 2 scope includes:</strong> Strategic 5-page website // UX/UI Architecture // Mobile Engineering // On-Page SEO Foundation // Copywriting Integration // Performance Optimisation // Production-Ready ZIP Archive Delivery.<br><br><span class="scope-warning">NOTE: Our standard site structure is Home / Methodology / Services / About / Contact. You may propose an alternative layout in Section 03 — maximum 5 pages. If the Digital Deployment Add-On was selected in your SLA, complete Section 04 in full.</span>',
+          '<strong><span class="scope-warning">NOTE: Our standard site structure is Home / Methodology / Services / About / Contact. You may propose an alternative layout in Section 03 — maximum 5 pages. If the Digital Deployment Add-On was selected in your SLA, complete Section 04 in full.</span>',
         questions: [
           {
             id: "t2_s1_q1",
@@ -682,10 +682,25 @@ export const FORMS = {
             directive:
               "List every service appearing on the Services page. For each: (a) the exact public-facing name, (b) a 2–3 sentence description in client-outcome language, (c) whether pricing will be displayed publicly.",
             type: "textarea",
-            rows: 8,
+            rows: 1,
             placeholder:
-              "Service name / Outcome-focused description / Pricing visible: Yes or No",
+              "a. Service name",
           },
+                    {
+            id: "t2_s3_q3_b",
+            type: "textarea",
+            rows: 2,
+            placeholder:
+              "b. a 2–3 sentence description in client-outcome language",
+          },
+                              {
+            id: "t2_s3_q3_c",
+            type: "textarea",
+            rows: 1,
+            placeholder:
+              "c. Whether pricing will be displayed publicly",
+          },
+          
           {
             id: "t2_s3_q4",
             num: "3.4",
@@ -800,19 +815,8 @@ export const FORMS = {
               "e.g. brand identity design Johannesburg\npremium logo design South Africa\nbranding agency for startups",
           },
           {
-            id: "t2_s4_q6",
+            id: "t2_s4_q6_notes",
             num: "4.6",
-            label: "Third-Party Integrations",
-            directive:
-              "List any tools or platforms that must be functional on the delivered site, and their purpose. Applies to both ZIP delivery and deployed builds.",
-            type: "textarea",
-            rows: 3,
-            placeholder:
-              "Tool / Purpose\ne.g. Calendly — discovery call booking\nGoogle Analytics 4 — performance tracking\nMeta Pixel — paid ad retargeting\n\nOr N/A",
-          },
-          {
-            id: "t2_s4_q7_notes",
-            num: "4.7",
             label: "Self-Deploy Technical Capacity",
             directive:
               "If you did NOT select the Deployment Add-On — confirm who will be handling deployment on your side. Name and role of the developer or technical contact responsible for taking the ZIP Archive live.",
@@ -866,17 +870,6 @@ export const FORMS = {
           {
             id: "t2_s5_q4",
             num: "5.4",
-            label: "Services Page CTA",
-            directive:
-              "What action do you want a visitor to take directly from the Services page? Define the exact CTA text and its destination.",
-            type: "textarea",
-            rows: 2,
-            placeholder:
-              "e.g. 'Request a custom proposal' → contact form. 'Book a discovery call' → Calendly link.",
-          },
-          {
-            id: "t2_s5_q5",
-            num: "5.5",
             label: "Final Authority Statement",
             directive:
               "What is the single most important thing you want a prospect to believe about your business by the time they reach the contact page? This becomes the closing statement that reinforces your position before they send the inquiry.",
@@ -886,8 +879,8 @@ export const FORMS = {
               "The belief that must be established before they hit send.",
           },
           {
-            id: "t2_s5_q6",
-            num: "5.6",
+            id: "t2_s5_q5",
+            num: "5.5",
             label: "Approval & Sign-Off Process",
             directive:
               "Who is the final decision-maker for approvals on this project? If multiple stakeholders are involved in sign-off, list each by name and role. Undefined approval chains are the primary cause of project delays.",
@@ -896,7 +889,7 @@ export const FORMS = {
             placeholder: "Name / Role",
           },
           {
-            id: "t2_s5_q7",
+            id: "t2_s5_q6",
             num: "",
             label: "Your Email Address",
             directive:
@@ -905,7 +898,7 @@ export const FORMS = {
             placeholder: "your@email.com",
           },
           {
-            id: "t2_s5_q8",
+            id: "t2_s5_q7",
             num: "",
             label: "Your Full Name",
             directive: "For our records and correspondence.",
