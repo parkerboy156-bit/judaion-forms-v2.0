@@ -61,10 +61,10 @@ export default function AuthenticatedForm({ tier, formDef }) {
   }
 
   // Called by FormShell on final submission
-  async function handleMarkComplete(formData) {
-    if (!user) return
+async function handleMarkComplete(formData) {
+    if (!user) return null
 
-    await supabase
+    const { data } = await supabase
       .from('form_progress')
       .upsert({
         user_id:      user.id,
@@ -72,8 +72,13 @@ export default function AuthenticatedForm({ tier, formDef }) {
         current_step: formDef.sections.length - 1,
         form_data:    formData,
         completed:    true,
+        client_email: user.email,
         updated_at:   new Date().toISOString(),
       }, { onConflict: 'user_id,tier' })
+      .select('id')
+      .single()
+
+    return data?.id || null
   }
 
   function goHome() {

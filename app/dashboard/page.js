@@ -104,9 +104,16 @@ export default function Dashboard() {
             {user?.email}
           </div>
         </div>
-        <button className="btn-nav" onClick={handleLogout} disabled={loading}>
-          Log Out
-        </button>
+        <div style={{ display: "flex", gap: "12px" }}>
+          {user?.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL && (
+            <button className="btn-nav" onClick={() => router.push("/admin")}>
+              Admin
+            </button>
+          )}
+          <button className="btn-nav" onClick={handleLogout} disabled={loading}>
+            Log Out
+          </button>
+        </div>
       </div>
 
       {/* Title */}
