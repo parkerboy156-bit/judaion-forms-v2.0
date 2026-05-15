@@ -123,7 +123,7 @@ export const FORMS = {
           {
             id: "t1_s2_q3",
             num: "2.3",
-            label: "The Transformation Contract — BEFORE",
+            label: "The Transformation Contract — BEFORE & AFTER",
             directive:
               "What is the client's life or business like before working with you, and what does it look like after? Define both states clearly. This becomes the core of how your brand communicates its value.",
             type: "textarea",
