@@ -118,7 +118,7 @@ export default function Dashboard() {
 
       {/* Title */}
       <div style={{ width: "100%", maxWidth: "960px", marginBottom: "48px" }}>
-        <div className="section-tag">// Client Dashboard</div>
+        <div className="section-tag">Client Dashboard</div>
         <div
           className="section-title"
           style={{ fontSize: "clamp(36px, 5vw, 60px)" }}

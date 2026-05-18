@@ -453,7 +453,7 @@ export default function FormSection({
     <div className="form-section active">
       {Object.values(errors).some(Boolean) && (
         <div className="section-error-banner">
-          // All fields are required — complete every question before proceeding
+          All fields are required — complete every question before proceeding
         </div>
       )}
       <div className="section-tag">{section.tag}</div>

@@ -924,7 +924,7 @@ input.error {
 }
 
 .yn-row.error .yn-question::after {
-  content: " — requiorange";
+  content: " — required";
   color: var(--red);
   font-family: var(--font-mono);
   font-size: 10px;

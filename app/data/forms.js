@@ -1,9 +1,9 @@
 export const FORMS = {
   t1: {
-    badge: "T1 // Identity Launchpad",
+    badge: "T1 | Identity Launchpad",
     sections: [
       {
-        tag: "Sect.01 // Site Preparation",
+        tag: "Sect.01 | Site Preparation",
         title: "CORE BRAND\nDNA",
         subtitle:
           "This section is about defining the absolute fundamentals of your business — what it is, why it exists, and where it is going. Before any design work begins, these answers give us the strategic clarity to build something that actually means something.",
@@ -95,7 +95,7 @@ export const FORMS = {
         ],
       },
       {
-        tag: "Sect.02 // Foundation Laying",
+        tag: "Sect.02 | Foundation Laying",
         title: "AUDIENCE\nINTELLIGENCE",
         subtitle:
           "A brand that tries to speak to everyone speaks to no one. This section defines exactly who this brand is being built for — and equally importantly, who it is designed to push away.",
@@ -162,7 +162,7 @@ export const FORMS = {
         ],
       },
       {
-        tag: "Sect.03 // Structural Framing",
+        tag: "Sect.03 | Structural Framing",
         title: "MARKET\nPOSITION",
         subtitle:
           "This section maps the competitive landscape. The goal is not to copy what competitors do — it is to find the gap they have left open and build your brand specifically to occupy that ground.",
@@ -236,7 +236,7 @@ export const FORMS = {
         ],
       },
       {
-        tag: "Sect.04 // Systems Installation",
+        tag: "Sect.04 | Systems Installation",
         title: "THE VISUAL\nFRAMEWORK",
         subtitle:
           "This section translates your strategic intent into a visual brief. Before we choose a single colour or typeface, we establish the personality, tone and aesthetic direction the brand needs to embody.",
@@ -304,7 +304,7 @@ export const FORMS = {
         ],
       },
       {
-        tag: "Sect.05 // External & Internal Finishing",
+        tag: "Sect.05 | External & Internal Finishing",
         title: "TONE AND\nLANGUAGE",
         subtitle:
           "How a brand speaks is as important as how it looks. This section establishes the verbal register — the tone, vocabulary, and language style that will represent your business across every touchpoint.",
@@ -375,10 +375,10 @@ export const FORMS = {
   },
 
   t2: {
-    badge: "T2 // Digital Authority",
+    badge: "T2 | Digital Authority",
     sections: [
       {
-        tag: "Sect.01 // The Curb Appeal",
+        tag: "Sect.01 | The Curb Appeal",
         title: "VISUAL IDENTITY &\nFIRST IMPRESSION",
         subtitle:
           "The immediate emotional response when someone arrives at the digital property — the aesthetic, the materials, and the signage that defines the exterior before a single word is read.",
@@ -483,7 +483,7 @@ export const FORMS = {
       },
 
       {
-        tag: "Sect.02 // The Threshold",
+        tag: "Sect.02 | The Threshold",
         title: "USER JOURNEY &\nNAVIGATION",
         subtitle:
           "Where the visitor decides to step inside. This covers the ease of entry, the primary message that greets them at the door, and the key value propositions they need before they walk in.",
@@ -547,7 +547,7 @@ export const FORMS = {
       },
 
       {
-        tag: "Sect.03 // The Interior Flow",
+        tag: "Sect.03 | The Interior Flow",
         title: "CONTENT STRATEGY\n& LAYOUT",
         subtitle:
           "Once inside, the visitor needs to move through the space logically. This section defines the floor plan — the purpose of each room, the furniture it needs, and where the brand's personality should shine through most clearly.",
@@ -748,7 +748,7 @@ export const FORMS = {
       },
 
       {
-        tag: "Sect.04 // The Locks & Security",
+        tag: "Sect.04 | The Locks & Security",
         title: "TECHNICAL\nINFRASTRUCTURE",
         subtitle:
           "A front door is only functional if it is secure and well-installed. This section covers the hardware of the site — domain, hosting, compliance, integrations, and the technical foundation the build sits on.",
@@ -824,7 +824,7 @@ export const FORMS = {
       },
 
       {
-        tag: "Sect.05 // The Invitation",
+        tag: "Sect.05 | The Invitation",
         title: "THE CALL\nTO ACTION",
         subtitle:
           "The final part of the front door experience — the reason the visitor came over in the first place. This section defines the handshake, the RSVP mechanism, and the final authority statement that closes the brief.",
@@ -906,7 +906,7 @@ export const FORMS = {
   },
 
   t3: {
-    badge: "Tier 3 // Scale Partner",
+    badge: "Tier 3 | Scale Partner",
     sections: [
       {
         tag: "// 01 — Monthly Focus",
