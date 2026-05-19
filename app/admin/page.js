@@ -5,9 +5,9 @@ import { createClient } from '../../lib/supabase'
 import { useRouter } from 'next/navigation'
 
 const TIER_LABELS = {
-  t1: 'T1 // Identity Launchpad',
-  t2: 'T2 // Digital Authority',
-  t3: 'T3 // Scale Partner',
+  t1: 'T1 | Identity Launchpad',
+  t2: 'T2 | Digital Authority',
+  t3: 'T3 | Scale Partner',
 }
 
 const STATUS_STYLES = {
